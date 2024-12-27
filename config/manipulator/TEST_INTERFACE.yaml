@@ -1,0 +1,7 @@
+
+# configuration for test_interface.cpp
+
+rs020n:
+  tool_link_idx: 14 #wrist_3_link
+  robot_urdf: robot_description/RS020N/rs020n.urdf
+  robot_script: main_pybullet.py

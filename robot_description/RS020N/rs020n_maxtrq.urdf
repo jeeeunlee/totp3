@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="rs020n">
+	<link name="ground">
+		<inertial>
+			<origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<mass value="0.00000"/>
+			<inertia ixx="1000000." ixy="0" ixz="0" iyy="1000000." iyz="0" izz="1000000."/>
+		</inertial>
+		<visual>
+			<origin rpy="1.57080 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="./meshes/RS020N-J0.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_RS020N-J0">
+				<color rgba="0.90000 0.85000 0.70000 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="1.57080 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="./meshes/RS020N-J0.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="shoulder_pan">
+		<inertial>
+			<origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.10000"/>
+			<mass value="105.819"/>
+			<inertia ixx="2.4662" ixy="0" ixz="0" iyy="2.3289" iyz="0" izz="1.7986"/>
+		</inertial>
+		<visual>
+			<origin rpy="-1.57080 -0.00000 1.57080" xyz="0.00000 0.00000 -0.25000"/>
+			<geometry>
+				<mesh filename="./meshes/RS020N-J1.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_RS020N-J1">
+				<color rgba="0.90000 0.85000 0.70000 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="-1.57080 -0.00000 1.57080" xyz="0.00000 0.00000 -0.25000"/>
+			<geometry>
+				<mesh filename="./meshes/RS020N-J1.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="shoulder_lift">
+		<inertial>
+			<origin rpy="0.00000 0.00000 0.00000" xyz="0.11000 0.00000 0.45000"/>
+			<mass value="34.056"/>
+			<inertia ixx="0.18643" ixy="0" ixz="0" iyy="3.8671" iyz="0" izz="3.9003"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 1.57080 4.71239" xyz="0.00000 0.00000 0.06000"/>
+			<geometry>
+				<mesh filename="./meshes/RS020N-J2.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_RS020N-J2">
+				<color rgba="0.90000 0.85000 0.70000 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 1.57080 4.71239" xyz="0.00000 0.00000 0.06000"/>
+			<geometry>
+				<mesh filename="./meshes/RS020N-J2.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="forearm">
+		<inertial>
+			<origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.25000"/>
+			<mass value="24.361"/>
+			<inertia ixx="0.27260" ixy="0" ixz="0" iyy="0.33739" iyz="0" izz="0.24438"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -1.57080 4.71239" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="./meshes/RS020N-J3.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_RS020N-J3">
+				<color rgba="0.90000 0.85000 0.70000 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -1.57080 4.71239" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="./meshes/RS020N-J3.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="wrist_1_link">
+		<inertial>
+			<origin rpy="0.00000 0.00000 0.00000" xyz="-0.02000 0.00000 -0.34000"/>
+			<mass value="17.376"/>
+			<inertia ixx="0.99186" ixy="0" ixz="0" iyy="1.0047" iyz="0" izz="0.04649"/>
+		</inertial>
+		<visual>
+			<origin rpy="1.57080 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="./meshes/RS020N-J4.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_RS020N-J4">
+				<color rgba="0.90000 0.85000 0.70000 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="1.57080 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="./meshes/RS020N-J4.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="wrist_2_link">
+		<inertial>
+			<origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+			<mass value="2.699"/>
+			<inertia ixx="0.0032" ixy="0" ixz="0" iyy="0.00567" iyz="0" izz="0.00588"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -1.57080 4.71239" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="./meshes/RS020N-J5.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_RS020N-J5">
+				<color rgba="0.90000 0.85000 0.70000 1.00000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -1.57080 4.71239" xyz="0.00000 0.00000 0.00000"/>
+			<geometry>
+				<mesh filename="./meshes/RS020N-J5.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+	</link>
+
+	<link name="wrist_3_link">
+		<inertial>
+			<origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 -0.02665"/>
+			<mass value="0.20000"/>
+			<inertia ixx="1.00000" ixy="0" ixz="0" iyy="1.00000" iyz="0" izz="1.00000"/>
+		</inertial>
+		<visual>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 -0.15000 0.00000"/>
+			<geometry>
+				<mesh filename="./meshes/RS020N-J6.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_RS020N-J6">
+				<color rgba="0.90000 0.85000 0.70000 1.00000" />
+			</material>
+		</visual>
+		<visual>
+			<origin rpy="1.57080 -0.00000 0.00000" xyz="0.00000 -0.15 0.00000"/>
+			<geometry>
+				<!-- <mesh filename="./meshes/1006041_A_2.stl" scale="1.00000 1.00000 1.00000"/> -->
+				<box size="0.175 0.15 0.05" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+			<material name="mat_gripper_short_off_white">
+				<color rgba="0.50000 0.10000 0.10000 0.50000" />
+			</material>
+		</visual>
+		<collision>
+			<origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 -0.15000 0.00000"/>
+			<geometry>
+				<mesh filename="./meshes/RS020N-J6.obj" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+		<collision>
+			<origin rpy="1.57080 -0.00000 0.00000" xyz="0.036 -0.125 0.00000"/>
+			<geometry>
+				<box size="0.175 0.15 0.05" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+		</collision>
+        <!-- <visual>
+			<origin rpy="1.57080 -0.00000 0.00000" xyz="0.036 -0.125 0.00000"/>
+			<geometry>
+				<box size="0.175 0.15 0.05" scale="1.00000 1.00000 1.00000"/>
+			</geometry>
+            <color rgba="0.50000 0.10000 0.10000 0.50000" />
+		</visual> -->
+        <!-- <visual>
+			<origin rpy="1.57080 -0.00000 0.00000" xyz="0.00000 -0.09 0.00000"/>
+			<geometry>
+				<cylinder radius="0.075" length="0.02"/> 
+			</geometry>
+            <material name="mat_gripper_short_off_white">
+				<color rgba="0.0000 0.80000 0.80000 1.00000" />
+			</material>
+		</visual> -->
+        <collision>
+			<origin rpy="1.57080 0.00000 0.00000" xyz="0.00000 -0.09 0.00000"/>
+			<geometry>
+				<cylinder radius="0.075" length="0.02"/> 
+			</geometry>
+		</collision>
+	</link>
+
+	<joint name="j1" type="revolute">
+		<parent link="ground"/>
+		<child link="shoulder_pan"/>
+		<limit effort="2914" lower="-3.1400" upper="3.1400" velocity="3.3161"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="3.14159 -0.00000 1.57080" xyz="0.00000 0.00000 0.19900"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<transmission name="j1_trans" type = "pr2_mechanism_model/SimpleTransmission" >
+		<actuator name = "j1_motor"/>
+		<joint name = "j1"/>
+		<mechanicalReduction>"1.0 "</mechanicalReduction>
+	</transmission>
+	<joint name="j2" type="revolute">
+		<parent link="shoulder_pan"/>
+		<child link="shoulder_lift"/>
+		<limit effort="3062" lower="-1.8326" upper="2.7053" velocity="3.5779"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 1.57080 4.71239" xyz="0.15000 0.06000 -0.26600"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<transmission name="j2_trans" type = "pr2_mechanism_model/SimpleTransmission" >
+		<actuator name = "j2_motor"/>
+		<joint name = "j2"/>
+		<mechanicalReduction>"1.0 "</mechanicalReduction>
+	</transmission>
+	<joint name="j3" type="revolute">
+		<parent link="shoulder_lift"/>
+		<child link="forearm"/>
+		<limit effort="1030" lower="-2.8449" upper="2.618" velocity="3.6652"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="3.14159 -0.00000 0.00000" xyz="0.77000 0.00000 0.05490"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<transmission name="j3_trans" type = "pr2_mechanism_model/SimpleTransmission" >
+		<actuator name = "j3_motor"/>
+		<joint name = "j3"/>
+		<mechanicalReduction>"1.0 "</mechanicalReduction>
+	</transmission>
+	<joint name="j4" type="revolute">
+		<parent link="forearm"/>
+		<child link="wrist_1_link"/>
+		<limit effort="96.17" lower="-4.7124" upper="4.7124" velocity="6.9813"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 1.57080 -0.00000" xyz="0.80500 0.00000 0.00000"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<transmission name="j4_trans" type = "pr2_mechanism_model/SimpleTransmission" >
+		<actuator name = "j4_motor"/>
+		<joint name = "j4"/>
+		<mechanicalReduction>"1.0 "</mechanicalReduction>
+	</transmission>
+	<joint name="j5" type="revolute">
+		<parent link="wrist_1_link"/>
+		<child link="wrist_2_link"/>
+		<limit effort="107" lower="-2.5307" upper="2.5307" velocity="6.2832"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="0.00000 -1.57080 0.00000" xyz="0.00000 0.00000 0.00000"/>
+		<axis xyz="0.00000 0.00000 1.00000"/>
+	</joint>
+	<transmission name="j5_trans" type = "pr2_mechanism_model/SimpleTransmission" >
+		<actuator name = "j5_motor"/>
+		<joint name = "j5"/>
+		<mechanicalReduction>"1.0 "</mechanicalReduction>
+	</transmission>
+	<joint name="j6" type="revolute">
+		<parent link="wrist_2_link"/>
+		<child link="wrist_3_link"/>
+		<limit effort="73" lower="-6.28000" upper="6.28000" velocity="10.647"/>
+		<dynamics damping="1.0" friction="0.0001"/>
+		<origin rpy="3.14159 -0.00000 1.57080" xyz="0.23800 0.00000 0.00000"/>
+		<axis xyz="0.00000 1.00000 0.00000"/>
+	</joint>
+	<transmission name="j6_trans" type = "pr2_mechanism_model/SimpleTransmission" >
+		<actuator name = "j6_motor"/>
+		<joint name = "j6"/>
+		<mechanicalReduction>"1.0 "</mechanicalReduction>
+	</transmission>
+</robot>

@@ -1,0 +1,6 @@
+# configuration for test_interface.cpp
+# check 2023.07.18
+rs020n:
+  tool_link_idx: 14 #wrist_3_link
+  robot_urdf: robot_description/RS020N/rs020n_nomesh.urdf
+  robot_script: main_pybullet.py
