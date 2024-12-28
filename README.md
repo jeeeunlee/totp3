@@ -1,5 +1,3 @@
-# DHC (Dexterity & HCRL Controller)
-
 ## Introduction
 
 The code is developed based on
