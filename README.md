@@ -15,7 +15,7 @@ which can be installed from the follwing instructions.
 ## Installation
 ### 0. Clone the git repository
 ```cd ~/path/to/install``` <br/>
-```git clone --recursive https://github.com/jeeeunlee/DHC ```
+```git clone --recursive https://github.com/jeeeunlee/totp3 ```
 
 ### 1. Dependencies installation
 - **Conda** installation<br/>
